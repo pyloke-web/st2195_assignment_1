@@ -1,4 +1,4 @@
-##Practice assignment 2
+Practice assignment 2
 
 Create a GitHub repository called “st2195_assignment_2” that includes:
 - a README.md file with a short markdown description of this assignment [1 point]
