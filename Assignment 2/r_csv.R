@@ -7,6 +7,7 @@ cardf <-html_node(html,".wikitable") %>%
   head()
 
 #Export file in csv format
-write.csv(cardf,"Path to export the DataFrame\\cardf.csv", row.names = TRUE
+write.csv(cardf,"C:\\Users\\user\\OneDrive - JLYON\\Documents\\stats\\cardf.csv", row.names = TRUE)
+
 
           
