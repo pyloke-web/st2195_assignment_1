@@ -1,39 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
+#Web scraping a table from Wikipedia
 import requests #for HTTP request
 from bs4 import BeautifulSoup #scraping data from HTML and XML files
-url = requests.get('https://en.wikipedia.org/wiki/Comma-separated_values#Example').text #access url
-
-
-# In[6]:
-
-
-soup = BeautifulSoup(url,'lxml')
-My_table = soup.find("table",{"class":"wikitable"}) #access specific table with class wikitable
-My_table
-
-
-# In[8]:
-
-
 import pandas as pd
-df = pd.read_html(str(My_table))
-print(df) #printing list object
 
+url = requests.get('https://en.wikipedia.org/wiki/Comma-separated_values#Example').text #access url
+soup = BeautifulSoup(url,'lxml')
 
-# In[22]:
+My_table = soup.find("table",{"class":"wikitable"}) #access specific table with class wikitable
+df = pd.read_html(str(My_table)) #list object
 
-dfs = df[0] #printing as DF objet
-dfs
+dfs = df[0] #printing as dataframe objet
 dfs.to_csv('C:/Users/user/OneDrive - JLYON/Documents/stats/cardf3.csv')
-
-
-# In[21]:
-
-
-
-
