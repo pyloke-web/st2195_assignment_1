@@ -15,6 +15,7 @@ both using DBI and dplyr notation [1.75 points each]
 on sqlite3 [1.75 points]
 4. A simplified solution for the query in Q4 in either R or Python (placed either in
 the R or Python *_sql folder) [1.75 points]  
+  
 Note that the database file should not be placed in the GitHub repository (it is quite
 large). Also, the R and Python scripts should save the output of the queries in csv within
 their respective folders [1 point each].
