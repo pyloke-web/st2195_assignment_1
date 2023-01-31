@@ -10,7 +10,7 @@ or equal to 1000 (excluding doubles)
 '''
 final = []
 for i in range(1,1001):
- if (is_divisible_by_k(i, 2) and  is_divisible_by_k(i, 5) and is_divisible_by_k(i, 7)):
+ if (is_divisible_by_k(i, 2) | is_divisible_by_k(i, 5) | is_divisible_by_k(i, 7)):
     final.append(i)
 
 '''
